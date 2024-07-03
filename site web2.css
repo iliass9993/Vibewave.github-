@@ -1,0 +1,666 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* Utility Classes */
+.primary-text {
+  color: whitesmoke;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn-primary {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  margin: 0 1rem;
+}
+
+.btn-secondary {
+  color: whitesmoke;
+  background-color: #ca64058a;
+  margin-top: 2rem;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background: rgba(252, 143, 0, 0.651);
+}
+
+/* Headbar Start */
+header {
+  height: 100vh;
+  background: url("Black Modern Festival Music Presentation.png") center
+    center/cover no-repeat;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#navbar img {
+  width: 80px;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+#navbar ul li a {
+  padding: 15px 20px;
+  color: white;
+  font-weight: 600;
+}
+
+#navbar ul li a:hover {
+  border-bottom: 2px solid rgba(252, 113, 0, 0.788);
+}
+
+.btnLogin-popup {
+  width: 130px;
+  height: 33px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #965a00;
+  border: 2px solid white;
+  background: transparent;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+.btnLogin-popup:hover {
+  color: rgba(245, 245, 245, 0.63);
+  background: rgba(252, 143, 0, 0.651);
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+header .content h1 {
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+header .content p {
+  margin: 20px 0 40px;
+  color: whitesmoke;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header * {
+  z-index: 10;
+}
+
+/* Headbar End */
+/* About Start */
+#About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 2rem 1rem;
+}
+
+#About .title,
+#offers .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#About h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.705);
+}
+
+#About .title p {
+  font-size: 14px;
+  color: #000000f1;
+  font-weight: 200;
+}
+
+#About .About-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-align: center;
+}
+
+#About .About-content img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+#About .About-content p {
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/* About End */
+/* Offers Start */
+#offers {
+  display: flex;
+  justify-content: center;
+  background: url("Blue and Pink Gradient Modern Music Playlist Thumbnail Youtube.png")
+    center center/cover fixed;
+  padding: 2rem 1rem;
+}
+
+#offers h2 {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+#offers .title p {
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+#offers .offers-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#offers .offers-items img {
+  width: 100%;
+  max-width: 280px;
+}
+
+#offers .offers-items p {
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+}
+
+/* Offers End */
+/* Premium Start */
+.cont {
+  display: flex;
+  padding: 2rem 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: rgba(0, 0, 0, 0.733);
+  background: url("Blue and Pink Gradient Modern Music Playlist Thumbnail Youtube.png")
+    center center/cover fixed;
+}
+
+.cont div {
+  width: 100%;
+  max-width: 300px;
+  background-color: silver;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+
+.cont button {
+  width: 100%;
+  padding: 0.7rem 0.2rem;
+  border-radius: 20px;
+  background-color: orange;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.cont h1 {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.cont p {
+  padding: 1rem 2rem;
+}
+
+#bronze {
+  background-color: #a05822d7;
+}
+
+#Silver {
+  background-color: rgba(192, 192, 192, 0.658);
+}
+
+#gold {
+  background-color: rgba(255, 217, 0, 0.61);
+}
+
+#bronze button {
+  background-color: #ffeac1a2;
+}
+
+#Silver button {
+  background-color: #808080;
+}
+
+#gold button {
+  background-color: rgba(94, 80, 0, 0.507);
+}
+
+/* Premium End */
+/* FAQs Start */
+.accordion {
+  margin: 3rem 0;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.accordion .accordion-items {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-items button[aria-expanded="true"] {
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1rem 0;
+  color: #965a00;
+  font-size: 1.15rem;
+  font-weight: 500;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #a05822d7;
+}
+
+.accordion button:hover::after .accordion button:hover::after {
+  cursor: pointer;
+  color: #a05822d7;
+  border: 1px solid #03b5d2;
+}
+
+.accordion button:hover::title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded="true"].icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/* FAQs End */
+/* Contact Start */
+#contact {
+  padding: 5rem 0;
+  background: #ffff;
+}
+
+#contact .container {
+  max-width: 900px;
+}
+
+#contact .contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#contact .contact-content .contact-info {
+  width: 100%;
+  max-width: 400px;
+}
+
+#contact .contact-content .contact-info div {
+  margin: 30px 0;
+  line-height: 1.7;
+}
+
+#contact .contact-content .contact-info h3 {
+  font-size: 28px;
+  color: #383848;
+  margin-bottom: 10px;
+}
+
+#contact .contact-content .contact-info i {
+  color: #ca6405d2;
+  margin-right: 5px;
+}
+
+#contact .contact-content .contact-info a i {
+  color: #ffff;
+  background-color: #ca6405d2;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#contact .contact-content .contact-info a i:hover {
+  background: #ff7b005d;
+  color: #ca6405d2;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  margin: 20px 0;
+  border: none;
+  background-color: #ff7b002a;
+}
+
+#contact .btn {
+  background: #ca6405d2;
+  color: #ffffffd2;
+  cursor: pointer;
+}
+
+#contact .btn:hover {
+  background-color: #ff7b005d;
+}
+
+/* Contact End */
+/* Footer Start */
+#footer {
+  background: #ca6405d2;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+#footer a {
+  color: rgb(0, 0, 0);
+}
+
+/* Footer End */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+
+  .nav-button {
+    display: block;
+  }
+
+  #navbar img {
+    margin-left: 10px;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btnLogin-popup {
+    width: auto;
+    margin: 10px;
+  }
+
+  header .content h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  header .content p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #About {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #About .About-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #About .About-content p {
+    margin: 20px 0;
+  }
+
+  #offers {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #offers .offers-items {
+    flex-direction: column;
+  }
+
+  .cont {
+    flex-direction: column;
+  }
+
+  .cont div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .accordion button {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #contact .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #contact .contact-content .contact-info,
+  form {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+
+/* Modal Styles */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.685);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none; /* Hidden by default */
+}
+
+.modal {
+  background-color: silver;
+  padding: 20px;
+  border-radius: 30px;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.modal button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: rgba(252, 143, 0, 0.651);
+}
+
+.modal p {
+  margin-top: 10px;
+}
+
+.modal p a {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.modal p a:hover {
+  text-decoration: underline;
+}
